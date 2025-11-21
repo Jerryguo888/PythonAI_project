@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="utf-8">
+    <title>極簡藍色聊天介面</title>
+    <link rel="icon" href="data:,">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+
+<body>
+    <!-- 頂部標頭：學號與姓名 -->
+    <div class="chat-header">113403549 郭家睿</div>
+
+    <!-- 聊天記錄顯示區域 -->
+    <div class="scrollable-container" id="dialog-div"></div>
+
+    <!-- 輸入區域 (使用 input-area 容器實現 Flexbox 佈局) -->
+    <div class="input-area">
+        <input type="text" id="message" name="message" placeholder="輸入您的訊息...">
+        <button id="submit" type="button">發送</button>
+    </div>
+
+    <script src="https://unpkg.com/jquery"></script>
+    <script src="{{url_for('static', filename='js/main.js')}}"></script>
+</body>
+
+</html>
